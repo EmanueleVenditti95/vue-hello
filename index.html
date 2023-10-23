@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Hello</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 id="app">{{ message }}</h1>
+    <section id="app">
+        <figure :class="classLogo"><img :src=" picture "></figure>
+        <h1 :class="classTextCenter">{{ message }}</h1>
+    </section>
+    
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./app.js"></script>
